@@ -1,5 +1,5 @@
 <?php
-require 'connection.php'; // Include your connection function
+require 'db/connection.php'; // Include your connection function
 
 /**
  * Registers a new user.
