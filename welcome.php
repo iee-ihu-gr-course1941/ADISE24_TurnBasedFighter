@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+// Check if the user is logged in
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
     exit();
@@ -17,6 +18,6 @@ if (!isset($_SESSION['username'])) {
 <body>
     <h1>Welcome, <?= htmlspecialchars($_SESSION['username']); ?>!</h1>
     <p>Your account has been successfully created or you are logged in.</p>
-    <a href="game/logout.php">Logout</a>
+    <!-- <a href="game/logout.php">Logout</a>  -->
 </body>
 </html>
